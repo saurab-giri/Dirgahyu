@@ -1,13 +1,235 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.font-loader {
+  font-family: "Poppins";
+}
+.login {
+  display: flex;
+  padding: 80px;
+}
+
+.login-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-right {
+  padding: 80px 10px;
+}
+.login-title {
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.login-title::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #e2402d;
+  width: 18%;
+  position: relative;
+  bottom: -5px; /* your padding + border-width */
+}
+input {
+  width: 100%;
+  margin-bottom: 30px !important;
+  border: none;
+  border-bottom: 1px solid #989898;
+  font-family: FontAwesome, poppins !important;
+}
+input:focus {
+  outline: none;
+  font-family: FontAwesome, poppins;
+  font-size: 20px;
+}
+.login-btn {
+  padding: 5px 25px;
+  background-color: #e2402d;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  background-color: #ca2311;
+  transition: 1.5s ease;
+}
+
+.pwd-container {
+  position: relative;
+}
+
+.pwd-container img {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  right: 18px;
+  top: 0;
+}
+.pwd-container input {
+  width: 100%;
+  margin-bottom: 30px !important;
+  border: none;
+  border-bottom: 1px solid #989898;
+  font-family: poppins;
+  border-radius: 0;
+  padding: 0;
+}
+.pwd-container input:focus,
+.pwd-container input:active {
+  outline: none;
+  font-family: FontAwesome, poppins;
+  font-size: 20px;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid #989898;
+}
+
+/* header css */
+
+.header-img {
+  height: 10vh;
+  margin-top: 10px;
+}
+
+.navbar-nav .nav-link:not(:last-of-type) {
+  margin: 0 20px;
+}
+
+.navbar-nav .nav-link:last-of-type {
+  margin-left: auto;
+}
+.navigation-bar {
+  background-color: #e2402d;
+  padding: 10px 80px;
+  color: #fff;
+  position: relative;
+}
+.navigation-bar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 76px 0px;
+  border-color: transparent transparent #ffffff transparent;
+}
+a.nav-link {
+  color: #fff !important;
+}
+.offcanvas {
+  background-color: #e2402d !important;
+}
+
+/* Banner css */
+.banner-img {
+  height: 70vh;
+  width: 100%;
+  -webkit-transition: all 1s cubic-bezier(1, 0.12, 0.11, 0.78);
+  transition: all 1s cubic-bezier(1, 0.12, 0.11, 0.78);
+}
+.left-banner {
+  padding: 80px;
+}
+.banner-title {
+  font-weight: 700;
+}
+
+.banner-button {
+  margin-bottom: 30px;
+}
+.banner-search {
+  padding: 20px 0;
+}
+/* bloodsection css  */
+
+.blood-section {
+  padding: 30px 80px;
+}
+
+.org-img img {
+  height: 10vh;
+}
+.blood-box {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+.org-location {
+  padding: 0 20px;
+}
+
+.check-blood-btn {
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.blood-grp {
+  background-color: #e2402d;
+  color: #fff;
+}
+/* donateSection css */
+.donate-section {
+  background-color: #e2402d;
+  padding: 30px 80px;
+  color: #fff;
+}
+.donate-btn:hover {
+  background-color: #000 !important;
+}
+/* about css  */
+.about-section {
+  padding: 50px 120px;
+}
+.about-detail {
+  margin-bottom: 50px;
+}
+.team-title::after,
+.about-title::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #e2402d;
+  width: 15%;
+  position: relative;
+  bottom: -5px; /* your padding + border-width */
+  left: 43%;
+}
+.team-title,
+.about-title {
+  margin-bottom: 30px;
+}
+/* footer css */
+
+.footer {
+  padding: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: end !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: end !important;
+  }
 }

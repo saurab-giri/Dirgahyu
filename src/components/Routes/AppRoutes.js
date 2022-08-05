@@ -1,4 +1,7 @@
 /* eslint-disable react/prop-types */
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { AboutPage, HomePage, Login } from "../pages";
 
 // import { useSelector } from "react-redux";
 // import { Routes, Route, Navigate, Outlet } from "react-router-dom";
@@ -17,11 +20,12 @@
 // };
 
 const AppRoute = () => {
-
   return (
     <>
       <Routes>
-          <Route path="/" element={} />
+        <Route path="/" element={<Login />} />
+        <Route path="/homepage" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </>
   );
